@@ -4,7 +4,7 @@ import { ResponseStartGame } from "../types/interfaces"
  * Returns response object indicating the game has started or if there was an error
  * 
  * @param {boolean} start start the game
- * @return {string} response success or error object
+ * @return {object} response object success or error
  */
  const startGame = (start: boolean): Promise<string> => {
   // I can't get import.meta to work with jest. Harding coding values for the moment

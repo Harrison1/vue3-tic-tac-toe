@@ -22,7 +22,7 @@ describe('playerAction', () => {
     const res = await playerAction(gridPosition, playerUUID, x, y)
     expect(res).toEqual(mockResult)
     expect(fetchMock.mock.calls.length).toEqual(1)
-  }),
+  })
 
   it('Return 400 Bad Request', async () => {
     const gridPosition = 10

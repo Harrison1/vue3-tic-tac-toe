@@ -60,9 +60,15 @@ export interface ErrorMessage {
   default: string
 }
 
-enum LogLevel {
+export enum LogLevel {
   ERROR,
   WARN,
   INFO,
   DEBUG
+}
+
+export interface ResponsePlayerJoin {
+  statusCode: number
+  message: string
+  player?: number
 }

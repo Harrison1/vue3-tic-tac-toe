@@ -19,7 +19,7 @@ describe('startGame', () => {
     const res = await startGame(true)
     expect(res).toEqual(mockResult)
     expect(fetchMock.mock.calls.length).toEqual(1)
-  }),
+  })
 
   it('Return 400 Bad Request', async () => {
     const mockResult: ResponseStartGame = {

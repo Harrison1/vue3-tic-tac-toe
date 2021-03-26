@@ -3,7 +3,7 @@ import { ResponseRoomTotals } from "../types/interfaces";
 /**
  * Returns the amount of people total in the room
  *
- * @return {number} number of people in the game room, including all watchers and players
+ * @return {object} response object cotaining room totals
  */
 const fetchObservers = (uuid: string): Promise<ResponseRoomTotals> => {
   const apiPath: string | boolean = import.meta.env.VITE_API_PATH!
